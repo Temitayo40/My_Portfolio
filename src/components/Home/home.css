@@ -1,0 +1,58 @@
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(54, 179, 127, 0.178);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+.home img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .homeContent {
+  width: 80%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 1.5rem 3rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  text-align: center;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  z-index: 100;
+  color: var(--color-paragraph);
+}
+.home .homeContent .textDiv {
+  flex-direction: column;
+  gap: 1rem;
+}/*# sourceMappingURL=home.css.map */
