@@ -7,6 +7,7 @@
   --color-text: #3a4a42;
   --color-default: #ffffff;
   --color-gradient: linear-gradient(to right, #36b37f, #008552);
+  --color-icons: #505f79;
 }
 
 .home {
@@ -37,7 +38,7 @@
      object-fit: cover;
 }
 .home .homeContent {
-  width: 80%;
+  width: 100%;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -54,5 +55,24 @@
 }
 .home .homeContent .textDiv {
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+.home .homeContent .textDiv .textTitle {
+  font-size: 3.5rem;
+}
+.home .homeContent .textDiv .textTitle .top {
+  color: var(--color-secondary);
+}
+.home .homeContent .textDiv .textTitle .low {
+  color: var(--color-primary);
+}
+.home .homeContent .textDiv .paragraph {
+  font-size: 1.7rem;
+}
+.home .homeContent .textDiv .homeIcons {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.home .homeContent .textDiv .homeIcons .icons {
+  color: var(--color-icons);
 }/*# sourceMappingURL=home.css.map */
