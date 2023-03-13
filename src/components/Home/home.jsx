@@ -1,6 +1,6 @@
 import React from "react";
 import home from "../../img/home.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <section className="home">
       <div className="overlay"></div>
-      <img src={home} alt="home background image" />
+      <img src={home} alt="home background" />
 
       <div className="homeContent container">
         <div className="textDiv flex">
@@ -26,16 +26,16 @@ const Home = () => {
           </p>
 
           <div className="homeIcons flex">
-            <a className="icons" to="/#">
+            <a className="icons" href="/#">
               <BsTwitter className="icon" />
             </a>
-            <a className="icons" to="/#">
+            <a className="icons" href="/#">
               <FaLinkedinIn className="icon" />
             </a>
-            <a className="icons" to="/#">
+            <a className="icons" href="/#">
               <FaFacebookF className="icon" />
             </a>
-            <a className="icons" to="/#">
+            <a className="icons" href="/#">
               <BsGithub className="icon" />
             </a>
           </div>

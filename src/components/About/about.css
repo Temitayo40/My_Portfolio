@@ -1,0 +1,132 @@
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+  --color-icons: #505f79;
+  --color-background: #c1c7d0;
+}
+
+.About .topSection {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.About .topSection img {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  bottom: 0;
+}
+.About .topSection .right {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 0px;
+  top: -39px;
+}
+.About .topSection .left {
+  position: absolute;
+  height: 55px;
+  width: 119px;
+  top: 20rem;
+  left: -3rem;
+}
+.About .topSection .aboutme {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+.About .topSection .aboutme .secTitle .title {
+  margin: auto;
+  color: var(--color-secondary);
+  font-size: 3rem;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.About .topSection .aboutme .secTitle .title:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -0.5rem;
+  width: 10rem;
+  height: 0.5rem;
+  background: var(--color-primary);
+  z-index: -1;
+}
+.About .topSection .aboutme .paragraph {
+  width: 100%;
+  z-index: 100;
+}
+.About .cardSection {
+  justify-content: center;
+  margin-top: 3rem;
+}
+.About .cardSection .singleCard {
+  display: grid;
+  gap: 1.4rem;
+}
+.About .cardSection .singleCard .cardContents {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  border-radius: 0.8rem;
+  border: 1px solid #c1c7d0;
+  padding: 4rem 2.4rem 2.4rem 2.4rem;
+  row-gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
+}
+.About .cardSection .singleCard .cardContents .imgDiv {
+  padding: 1.5rem;
+  background: var(--color-default);
+  display: flex;
+  border-radius: 10rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+.About .cardSection .singleCard .cardContents .imgDiv .logo {
+  align-items: center;
+  justify-content: center;
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 10rem;
+}
+.About .cardSection .singleCard .cardContents .title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #344563;
+}
+.About .cardSection .singleCard .cardContents .allTools {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.About .cardSection .singleCard .cardContents .allTools .tool {
+  background-color: var(--color-default);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: var(--color-primaryActive);
+  margin-bottom: 1rem;
+}
+
+.container {
+  padding-top: 0.4rem;
+}/*# sourceMappingURL=about.css.map */

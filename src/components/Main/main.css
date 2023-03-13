@@ -21,6 +21,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .main .secTitle .title:after {
   position: absolute;
@@ -34,7 +35,7 @@
 }
 .main .secContent {
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.4rem;
 }
 .main .secContent .singleProject {
   display: grid;
@@ -43,7 +44,8 @@
   border-radius: 0.8rem;
   align-items: center;
   background: var(--color-default);
-  box-shadow: rgba(29, 31, 29, 0.2);
+  box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
+  border: 1px solid #d0d9d4;
   overflow: hidden;
 }
 .main .secContent .singleProject .imageDiv {
@@ -56,21 +58,33 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 0.2s ease;
+  transition: 0.8s ease;
 }
-.main .secContent .singleProject .imageDiv img:hover img {
+.main .secContent .singleProject .imageDiv img:hover {
   transform: scale(1.1);
 }
 .main .secContent .singleProject .projContent {
+  display: grid;
   padding: 1.6rem;
   text-align: center;
+  color: var(--color-text);
+  row-gap: 2rem;
 }
 .main .secContent .singleProject .projContent .projTitle {
   font-size: 2.2rem;
-  background-color: var(--text-background);
+  color: var(--color-text);
   padding: 0.8rem 1.2rem;
   border-radius: 0.4rem;
-  color: var(--color-default);
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+}
+.main .secContent .singleProject .projContent .tools .projTool {
+  padding: 0.4rem 0.6rem;
+  background-color: var(--text-background);
+  border-radius: 0.4px;
+  border: none;
+}
+.main .secContent .singleProject .projContent .tools .projTool:not(:last-child) {
+  margin-right: 1rem;
+}
+.main .secContent .singleProject .projContent .btn {
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

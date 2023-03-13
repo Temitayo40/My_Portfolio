@@ -1,0 +1,147 @@
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+  --color-icons: #505f79;
+  --color-background: #c1c7d0;
+}
+
+.About {
+  .topSection {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    img {
+      position: absolute;
+      z-index: -100;
+      top: 0;
+      bottom: 0;
+    }
+
+    .right {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      right: 0px;
+      top: -39px;
+    }
+
+    .left {
+      position: absolute;
+      height: 55px;
+      width: 119px;
+      top: 20rem;
+      left: -3rem;
+    }
+
+    .aboutme {
+      width: 100%;
+      display: grid;
+      gap: 1rem;
+
+      .secTitle {
+        .title {
+          margin: auto;
+          color: var(--color-secondary);
+          font-size: 3rem;
+          width: max-content;
+          position: relative;
+          z-index: 2;
+          margin-bottom: 2rem;
+          text-align: center;
+
+          &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -0.5rem;
+            width: 10rem;
+            height: 0.5rem;
+            background: var(--color-primary);
+            z-index: -1;
+          }
+        }
+      }
+
+      .paragraph {
+        width: 100%;
+        z-index: 100;
+      }
+    }
+  }
+
+  .cardSection {
+    justify-content: center;
+    margin-top: 3rem;
+
+    .singleCard {
+      display: grid;
+      gap: 1.4rem;
+
+      .cardContents {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-background);
+        border-radius: 0.8rem;
+        border: 1px solid #c1c7d0;
+        padding: 4rem 2.4rem 2.4rem 2.4rem;
+        row-gap: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
+
+        .imgDiv {
+          padding: 1.5rem;
+          background: var(--color-default);
+          display: flex;
+          border-radius: 10rem;
+          margin-bottom: 4rem;
+          justify-content: center;
+
+          .logo {
+            align-items: center;
+            justify-content: center;
+            height: 4.4rem;
+            width: 4.4rem;
+            border-radius: 10rem;
+          }
+        }
+
+        .title {
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #344563;
+        }
+
+        .allTools {
+          display: flex;
+          column-gap: 1rem;
+          flex-wrap: wrap;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          .tool {
+            background-color: var(--color-default);
+            padding: 0.8rem 1.2rem;
+            border-radius: 0.4rem;
+            border: none;
+            color: var(--color-primaryActive);
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  padding-top: 0.4rem;
+}

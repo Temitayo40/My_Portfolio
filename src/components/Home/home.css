@@ -66,9 +66,6 @@
 .home .homeContent .textDiv .textTitle .low {
   color: var(--color-primary);
 }
-.home .homeContent .textDiv .paragraph {
-  font-size: 1.7rem;
-}
 .home .homeContent .textDiv .homeIcons {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
