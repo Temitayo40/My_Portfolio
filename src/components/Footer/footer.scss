@@ -91,11 +91,11 @@
           &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid var(--color-primary);
+            border-bottom: 3px solid var(--color-primary);
           }
 
           &:focus:invalid {
-            border-bottom: 2px solid red;
+            border-bottom: 3px solid red;
           }
 
           // color: #fff;
@@ -159,6 +159,26 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    .footerSection {
+      .img-1 {
+        left: 0;
+        height: 12rem;
+        width: 12rem;
+      }
+
+      .img-2 {
+        left: 50%;
+        height: 12rem;
+        width: 12rem;
+      }
+      .img-3 {
+        width: 13rem;
       }
     }
   }

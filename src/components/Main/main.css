@@ -95,7 +95,7 @@
 @media screen and (min-width: 500px) {
   .main {
     width: 95%;
-    margin: 6rem auto;
+    margin: 3rem auto;
   }
 }
 @media screen and (min-width: 600px) {
@@ -104,5 +104,17 @@
   }
   .main .secContent {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1050px) {
+  .main {
+    margin: 5rem auto;
+  }
+  .main .secTitle .title {
+    font-size: 4rem;
+  }
+  .main .secContent {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */

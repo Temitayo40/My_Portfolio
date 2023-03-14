@@ -142,12 +142,43 @@
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 900px) {
+  .About .topSection .right {
+    height: 140px;
+    width: 200px;
+  }
+  .About .topSection .left {
+    height: 155px;
+    width: 170px;
+  }
+}
 @media screen and (min-width: 600px) {
   .About {
     width: 100%;
   }
+  .About .topSection .aboutme {
+    width: 95%;
+    margin: auto;
+  }
   .About .cardSection .singleCard {
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1050px) {
+  .About .cardSection .singleCard {
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .About .topSection .right {
+    height: 160px;
+    width: 180px;
+  }
+  .About .topSection .left {
+    height: 175px;
+    width: 203px;
   }
 }/*# sourceMappingURL=about.css.map */

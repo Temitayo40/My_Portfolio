@@ -100,3 +100,51 @@ body {
 html {
   font-size: 62.5%;
 }
+
+/* MEDIA QUERIES ************** */
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 68%;
+  }
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+  }
+
+  .paragraph {
+    font-size: 2.5rem;
+  }
+
+  .projTool {
+    font-size: 13px;
+  }
+
+  .tool {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .projTool {
+    font-size: 15px;
+  }
+
+  .tool {
+    font-size: 15px;
+  }
+  .paragraph {
+    margin-bottom: 1rem;
+  }
+}
