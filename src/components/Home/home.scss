@@ -57,7 +57,7 @@
       gap: 1.5rem;
 
       .textTitle {
-        font-size: 3.5rem;
+        font-size: 4rem;
 
         .top {
           color: var(--color-secondary);
@@ -74,6 +74,14 @@
           color: var(--color-icons);
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .home {
+    .homeContent {
+      padding: 12rem 1.5rem 12rem;
     }
   }
 }

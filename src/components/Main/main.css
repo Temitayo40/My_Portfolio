@@ -15,27 +15,30 @@
 }
 .main .secTitle .title {
   color: var(--color-secondary);
-  font-size: 3rem;
+  font-size: 3.5rem;
   width: -moz-max-content;
   width: max-content;
   position: relative;
   z-index: 2;
-  margin-bottom: 2rem;
+  margin: 0 auto 3rem auto;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .main .secTitle .title:after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 50%;
   bottom: -0.5rem;
+  transform: translate(-50%);
   width: 10rem;
   height: 0.5rem;
   background: var(--color-primary);
   z-index: -1;
 }
 .main .secContent {
-  justify-content: center;
   gap: 1.4rem;
+  width: 100%;
+  margin: auto;
 }
 .main .secContent .singleProject {
   display: grid;
@@ -87,4 +90,19 @@
 }
 .main .secContent .singleProject .projContent .btn {
   margin: auto;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    width: 95%;
+    margin: 6rem auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main {
+    width: 100%;
+  }
+  .main .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=main.css.map */

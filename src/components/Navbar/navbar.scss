@@ -20,17 +20,21 @@
   box-shadow: rgba(2, 15, 29, 0.23);
   z-index: 1000;
 
-  .logo {
-    color: var(--color-primary);
-    font-weight: 600;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  .logoDiv {
+    transform: translateY(-5px);
 
-    .icon {
-      font-size: 2.5rem;
-      color: var(--color-primaryActive);
-      transform: translateY(5px);
+    .logo {
+      color: var(--color-primary);
+      font-weight: 600;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .icon {
+        font-size: 2.5rem;
+        color: var(--color-primaryActive);
+        transform: translateY(5px);
+      }
     }
   }
 
@@ -97,6 +101,38 @@
 
       &:hover {
         color: var(--color-secondary);
+      }
+    }
+  }
+}
+
+///MEDIA QUERIES ************************
+///
+@media screen and (min-width: 769px) {
+  .closeNavBar,
+  .toggleNavBar {
+    display: none;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+
+    .navbar {
+      .navLists {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // margin-right: 10rem;
+
+        .navItem {
+          margin-right: 1rem;
+          .navLink {
+            color: var(--color-secondary);
+            font-size: 1.6rem;
+            font-weight: 600;
+            padding: 0.5rem;
+          }
+        }
       }
     }
   }

@@ -33,7 +33,7 @@ const About = () => {
         <img className="right" src={img2} alt=" right" />
         <div className="aboutme">
           <div className="secTitle">
-            <h2 className="title">My Recent Works</h2>
+            <h2 className="title">About Me</h2>
           </div>
           <p className="paragraph">
             I can help you build a product , feature or website Look through

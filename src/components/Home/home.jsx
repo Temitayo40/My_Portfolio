@@ -13,7 +13,7 @@ const Home = () => {
       <div className="overlay"></div>
       <img src={home} alt="home background" />
 
-      <div className="homeContent container">
+      <div className="homeContent">
         <div className="textDiv flex">
           <h1 className="textTitle">
             <span className="top">Hey there. I’m Damilola</span> <br />

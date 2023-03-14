@@ -1,1 +1,136 @@
-/*# sourceMappingURL=footer.css.map */
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+  --color-paragraph: #42526e;
+}
+
+.footer {
+  width: 100%;
+}
+.footer .footerSection {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  height: 100%;
+}
+.footer .footerSection img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+}
+.footer .footerSection .img-1 {
+  position: absolute;
+  top: auto;
+  left: 0rem;
+  height: 10rem;
+  width: 10rem;
+}
+.footer .footerSection .img-2 {
+  position: absolute;
+  top: auto;
+  left: 0;
+  height: 10rem;
+  width: 10rem;
+}
+.footer .footerSection .img-3 {
+  position: absolute;
+  top: auto;
+  right: 0rem;
+  width: 10rem;
+}
+.footer .footerSection .footerContent {
+  display: grid;
+  row-gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+.footer .footerSection .footerContent .footerTitle {
+  margin: auto;
+  color: var(--color-secondary);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.footer .footerSection .footerContent .form {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+.footer .footerSection .footerContent .form input,
+.footer .footerSection .footerContent .form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  outline: none;
+  border: 1px solid #d0d9d4;
+  font-size: 1.5rem;
+  background: var(--color-default);
+  border-radius: 4px;
+}
+.footer .footerSection .footerContent .form input ::-moz-placeholder, .footer .footerSection .footerContent .form textarea ::-moz-placeholder {
+  color: #6b778c;
+}
+.footer .footerSection .footerContent .form input ::placeholder,
+.footer .footerSection .footerContent .form textarea ::placeholder {
+  color: #6b778c;
+}
+.footer .footerSection .footerContent .form input:focus,
+.footer .footerSection .footerContent .form textarea:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--color-primary);
+}
+.footer .footerSection .footerContent .form input:focus:invalid,
+.footer .footerSection .footerContent .form textarea:focus:invalid {
+  border-bottom: 2px solid red;
+}
+.footer .footerSection .footerContent .form .inputText {
+  display: grid;
+  width: 100%;
+}
+.footer .footerSection .footerContent .form .inputText .fullscreen {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .footer {
+    width: 95%;
+    margin: auto;
+  }
+  .footer .footerSection .footerContent {
+    row-gap: 2.5rem;
+  }
+  .footer .footerSection .footerContent .form {
+    grid-row: 1.5rem;
+  }
+  .footer .footerSection .footerContent .form .inputText .fullscreen {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    width: 100%;
+    margin: auto;
+  }
+  .footer .footerSection .footerContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .footerSection .footerContent .form .inputText .fullscreen {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .footer .footerSection .footerContent .form .inputText .hide {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

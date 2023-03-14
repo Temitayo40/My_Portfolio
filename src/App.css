@@ -28,7 +28,8 @@ li {
 }
 
 .section {
-  padding: 6.4rem 2.4rem 6.8rem 2.4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .container {
   padding-left: 1.5rem;
@@ -72,13 +73,8 @@ li {
   background-color: #3ec78e;
 }
 .paragraph {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: var(--color-paragraph);
-  /* text-align: center;
-  justify-content: center;
-  height: max-content;
-
-   */
 }
 
 img {
@@ -92,6 +88,13 @@ input {
 
 body {
   background: #f3f3f3;
+  /* -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
 }
 
 html {

@@ -58,7 +58,7 @@
   gap: 1.5rem;
 }
 .home .homeContent .textDiv .textTitle {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .home .homeContent .textDiv .textTitle .top {
   color: var(--color-secondary);
@@ -72,4 +72,10 @@
 }
 .home .homeContent .textDiv .homeIcons .icons {
   color: var(--color-icons);
+}
+
+@media screen and (min-width: 769px) {
+  .home .homeContent {
+    padding: 12rem 1.5rem 12rem;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -11,6 +11,9 @@
   --color-background: #c1c7d0;
 }
 
+.About {
+  width: 100%;
+}
 .About .topSection {
   width: 100%;
   text-align: center;
@@ -47,19 +50,22 @@
 .About .topSection .aboutme .secTitle .title {
   margin: auto;
   color: var(--color-secondary);
-  font-size: 3rem;
+  font-size: 3.5rem;
   width: -moz-max-content;
   width: max-content;
   position: relative;
-  z-index: 2;
-  margin-bottom: 2rem;
+  margin: 0 auto 3rem auto;
+  padding-bottom: 2rem;
   text-align: center;
+  text-transform: capitalize;
+  z-index: 2;
 }
 .About .topSection .aboutme .secTitle .title:after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 50%;
   bottom: -0.5rem;
+  transform: translate(-50%);
   width: 10rem;
   height: 0.5rem;
   background: var(--color-primary);
@@ -127,6 +133,21 @@
   margin-bottom: 1rem;
 }
 
-.container {
-  padding-top: 0.4rem;
+@media screen and (min-width: 500px) {
+  .About {
+    width: 95%;
+    margin: 1rem auto 6rem auto;
+  }
+  .About .topSection .aboutme .paragraph {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .About {
+    width: 100%;
+  }
+  .About .cardSection .singleCard {
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=about.css.map */
