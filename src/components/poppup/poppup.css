@@ -1,0 +1,118 @@
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --text-background: #ebf0ee;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+}
+
+.poppup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(193, 199, 208, 0.973);
+  z-index: 8000;
+  transition: all 0.3s;
+}
+.poppup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 69%;
+  background-color: var(--color-default);
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 4.8rem 4.8rem rgba(37, 47, 137, 0.08);
+  border-radius: 8px;
+}
+@media screen and (min-width: 600px) {
+  .poppup__container {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .poppup__container {
+    width: 60%;
+  }
+}
+.poppup__textContent .contents {
+  display: grid;
+  text-align: start;
+  row-gap: 1rem;
+}
+.poppup__textContent .contents .imgDiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 500px) {
+  .poppup__textContent .contents .imgDiv {
+    height: 45vh;
+  }
+}
+@media screen and (min-width: 500px) {
+  .poppup__textContent .contents .imgDiv {
+    height: 47vh;
+  }
+}
+.poppup__textContent .contents .imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+.poppup__textContent .contents .imgDiv .icon {
+  display: absolute;
+  top: 3rem;
+  right: 1rem;
+  color: #67798e;
+}
+.poppup__textContent .contents .texts {
+  display: grid;
+  row-gap: 1rem;
+}
+.poppup__textContent .contents .texts .title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-align: start;
+}
+.poppup__textContent .contents .texts .tools {
+  display: flex;
+  -moz-column-gap: 0.9rem;
+       column-gap: 0.9rem;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: flex-start;
+}
+.poppup__textContent .contents .texts .tools .tool {
+  background-color: var(--text-background);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: #3a4a42;
+}
+.poppup__textContent .contents .texts .text {
+  color: #344563;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 500px) {
+  .poppup__textContent .contents .texts .text {
+    font-size: 1.2rem;
+  }
+}
+.poppup__textContent .contents .texts .button {
+  display: inline;
+  text-align: center;
+}
+.poppup__textContent .contents .texts .button .btn {
+  padding: 0.8rem;
+  margin: auto 0.3rem;
+}/*# sourceMappingURL=poppup.css.map */

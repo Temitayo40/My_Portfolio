@@ -5,6 +5,7 @@ import Home from "./components/Home/home";
 import Footer from "./components/Footer/footer";
 import Navbar from "./components/Navbar/navbar";
 import About from "./components/About/about";
+import Poppup from "./components/poppup/poppup";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <About />
       <Footer />
+      <Poppup />
     </>
   );
 }

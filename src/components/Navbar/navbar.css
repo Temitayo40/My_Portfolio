@@ -103,7 +103,8 @@
     display: none;
   }
   .header {
-    padding: 2rem 2.5rem;
+    padding: 1rem 3rem;
+    background: none;
   }
   .header .logoDiv {
     transform: translateY(-5px);
@@ -127,20 +128,5 @@
     font-size: 1.9rem;
     font-weight: 600;
     padding: 0.5rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .header {
-    background: rgba(180, 8, 8, 0.8);
-  }
-}
-@media screen and (min-width: 1050px) {
-  .header {
-    background: rgba(8, 180, 80, 0.8);
-  }
-}
-@media screen and (min-width: 1300px) {
-  .header {
-    background: rgba(8, 39, 180, 0.8);
   }
 }/*# sourceMappingURL=navbar.css.map */

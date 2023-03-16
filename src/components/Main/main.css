@@ -43,7 +43,6 @@
 .main .secContent .singleProject {
   display: grid;
   height: 100%;
-  row-gap: 1rem;
   border-radius: 0.8rem;
   align-items: center;
   background: var(--color-default);
@@ -72,6 +71,10 @@
   text-align: center;
   color: var(--color-text);
   row-gap: 2rem;
+  background-color: #fff;
+}
+.main .secContent .singleProject .projContent:hover {
+  background: rgba(201, 201, 201, 0.397);
 }
 .main .secContent .singleProject .projContent .projTitle {
   font-size: 2.2rem;

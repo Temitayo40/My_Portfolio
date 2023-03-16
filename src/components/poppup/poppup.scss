@@ -1,0 +1,128 @@
+:root {
+  --color-primary: #36b37f;
+  --color-primaryActive: #008552;
+  --color-primaryHover: #c5e9da;
+  --color-secondary: #172b4d;
+  --color-paragraph: #42526e;
+  --color-text: #3a4a42;
+  --color-default: #ffffff;
+  --text-background: #ebf0ee;
+  --color-gradient: linear-gradient(to right, #36b37f, #008552);
+}
+
+.poppup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(193, 199, 208, 0.973);
+  z-index: 8000;
+  //   opacity: 0;
+  //   visibility: hidden;
+  transition: all 0.3s;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 69%;
+    // height: 100%;
+    background-color: var(--color-default);
+    transform: translate(-50%, -50%);
+    // height: 20rem;
+    padding: 1rem;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 4.8rem 4.8rem rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+
+    @media screen and (min-width: 600px) {
+      width: 65%;
+    }
+    @media screen and (min-width: 769px) {
+      width: 60%;
+    }
+  }
+
+  &__textContent {
+    .contents {
+      display: grid;
+      text-align: start;
+      // display: relative;
+      row-gap: 1rem;
+
+      .imgDiv {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+
+        @media screen and (min-width: 500px) {
+          height: 45vh;
+        }
+        @media screen and (min-width: 500px) {
+          height: 47vh;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          // object-fit: cover;
+        }
+
+        .icon {
+          display: absolute;
+          top: 3rem;
+          right: 1rem;
+          color: #67798e;
+        }
+      }
+
+      .texts {
+        display: grid;
+        row-gap: 1rem;
+        .title {
+          font-size: 2.1rem;
+          font-weight: 600;
+          color: var(--color-secondary);
+          text-align: start;
+          // padding-bottom: 0.7rem;
+        }
+
+        .tools {
+          display: flex;
+          column-gap: 0.9rem;
+          flex-wrap: wrap;
+          text-align: start;
+          //   align-items: center;
+          justify-content: flex-start;
+          .tool {
+            background-color: var(--text-background);
+            padding: 0.6rem 1rem;
+            border-radius: 0.4rem;
+            border: none;
+            color: #3a4a42;
+            // margin-bottom: 1rem;
+          }
+        }
+
+        .text {
+          color: #344563;
+          font-size: 1.1rem;
+
+          @media screen and (min-width: 500px) {
+            font-size: 1.2rem;
+          }
+        }
+        .button {
+          display: inline;
+          text-align: center;
+          .btn {
+            padding: 0.8rem;
+            margin: auto 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}

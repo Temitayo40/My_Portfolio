@@ -3,6 +3,7 @@ import "./navbar.css";
 import { GiHolyGrail } from "react-icons/gi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+// import About from "../About/about";
 const Navbar = () => {
   const [active, setActive] = useState("navbar");
 
@@ -29,17 +30,17 @@ const Navbar = () => {
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="/#" className="navLink">
+              <a href="/#About" className="navLink">
                 About
               </a>
             </li>
             <li className="navItem">
-              <a href="/#" className="navLink">
+              <a href="/#Portfolio" className="navLink">
                 Portfolio
               </a>
             </li>
             <li className="navItem">
-              <a href="/#" className="navLink">
+              <a href="/#Contact" className="navLink">
                 Contact
               </a>
             </li>

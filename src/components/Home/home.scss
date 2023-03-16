@@ -59,9 +59,11 @@
 
       .textTitle {
         font-size: 4rem;
+        // animation: moveInLeft 1s ease-out;
 
         .top {
           color: var(--color-secondary);
+          // animation: moveInLeft 1s ease-out;
         }
         .low {
           color: var(--color-primary);
@@ -78,6 +80,10 @@
     }
   }
 }
+
+///MEDIA QUERIES ***************//
+///
+///
 
 @media screen and (min-width: 500px) {
   .home {
@@ -118,5 +124,39 @@
       width: 90%;
       column-gap: 1.5rem;
     }
+  }
+}
+
+///////ANIMATIONS *********************//
+///
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  80% {
+    transform: translateX(1.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem);
+  }
+
+  80% {
+    transform: translateX(-1.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }

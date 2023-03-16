@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./main.css";
 import img1 from "../../img/img1.jpg";
 import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Data = [
   {
     id: 1,
@@ -25,16 +28,22 @@ const Data = [
 ];
 
 const Main = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-    <section className="main container section">
+    <section id="Portfolio" className="main container section">
       <div className="secTitle">
-        <h2 className="title">My Recent Works</h2>
+        <h2 data-aos="fade-right" className="title">
+          My Recent Works
+        </h2>
       </div>
 
       <div className="secContent grid">
         {Data.map(({ id, imgSrc, title, tools }) => {
           return (
-            <div key={id} className="singleProject">
+            <div data-aos="fade-up" key={id} className="singleProject">
               <div className="imageDiv">
                 <img src={imgSrc} alt={title} />
               </div>

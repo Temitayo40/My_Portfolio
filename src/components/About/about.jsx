@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import img1 from "../../img/ilus-left.png";
 import img2 from "../../img/ilus-right.png";
 import logo1 from "../../img/languages.png";
 import logo2 from "../../img/framework.png";
 import logo3 from "../../img/skills.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const cards = [
   {
     id: 1,
@@ -26,22 +29,32 @@ const cards = [
   },
 ];
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section className="About container section ">
+    <section id="About" className="About container section ">
       <div className="topSection">
         <img className="left" src={img1} alt="left ilustration" />
         <img className="right" src={img2} alt=" right" />
         <div className="aboutme">
           <div className="secTitle">
-            <h2 className="title">About Me</h2>
+            <h2 data-aos="fade-right" className="title">
+              About Me
+            </h2>
           </div>
-          <p className="paragraph">
+          <p data-aos="fade-up" className="paragraph">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
 
-          <button className="btn" href="/#">
+          <button
+            data-aos="fade-up"
+            // data-aos-duration="500"
+            className="btn"
+            href="/#"
+          >
             Get my Resume
           </button>
         </div>
@@ -51,7 +64,7 @@ const About = () => {
         <div className="singleCard">
           {cards.map(({ id, logoSrc, title, tools }) => {
             return (
-              <div key={id} className="cardContents">
+              <div data-aos="fade-up" key={id} className="cardContents">
                 <div className="imgDiv">
                   <img className="logo" src={logoSrc} alt="logo" />
                 </div>
