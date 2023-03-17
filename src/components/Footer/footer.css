@@ -101,6 +101,17 @@
   display: none;
   margin-bottom: 1rem;
 }
+.footer .footerSection .homeIcons {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  border-top: 1ps solid grey;
+}
+.footer .footerSection .homeIcons .icons {
+  color: var(--color-icons);
+}
 
 @media screen and (min-width: 500px) {
   .footer {

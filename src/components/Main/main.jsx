@@ -10,20 +10,28 @@ const Data = [
   {
     id: 1,
     imgSrc: img1,
-    title: "Multi-Post Stories Gain+Glory",
-    tools: ["html", "css", "JavaScript", "reactJS"],
+    title: "Crown-Clothing",
+    tools: [
+      "html",
+      "css",
+      "JavaScript",
+      "Creat-React-App",
+      "Terminal",
+      "NPM",
+      "Netlify",
+    ],
   },
   {
     id: 2,
-    imgSrc: img2,
-    title: "Multi-Post Stories Gain+Glory",
-    tools: ["html", "css", "JavaScript", "reactJS"],
+    imgSrc: img3,
+    title: "Natours-Project",
+    tools: ["html5", "SCSS", "Terminal", "NPM", "Netlify"],
   },
   {
     id: 3,
-    imgSrc: img3,
-    title: "Multi-Post Stories Gain+Glory",
-    tools: ["html", "css", "JavaScript", "reactJS"],
+    imgSrc: img2,
+    title: "Ominifood",
+    tools: ["html", "CSS", "JavaScript", "Terminal", "NPM", "Netlify"],
   },
 ];
 

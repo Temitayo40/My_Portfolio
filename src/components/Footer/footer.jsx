@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
+import { BsTwitter } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import frame1 from "../../img/Frame-1.png";
 import frame2 from "../../img/Frame-2.png";
 import frame3 from "../../img/Frame-3.png";
@@ -99,6 +105,56 @@ const Footer = () => {
           </form>
         </div>
         <hr />
+        <div className="homeIcons flex">
+          <a
+            className="icons"
+            href="https://twitter.com/Dharmmycrown"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BsTwitter className="icon" />
+          </a>
+          <a
+            className="icons"
+            href="https://in.linkedin.com/in/damilola-adebowale-1611231b3/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaLinkedinIn className="icon" />
+          </a>
+          <a
+            className="icons"
+            href="https://m.me/damilola.adebowale.946"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaFacebookF className="icon" />
+          </a>
+          <a
+            className="icons"
+            href=" https://wa.me/2349038767574"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaWhatsapp className="icon" />
+          </a>
+          <a
+            className="icons"
+            href="https://github.com/Temitayo40"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <BsGithub className="icon" />
+          </a>
+          <a
+            className="icons"
+            href="mailto:Dharmmycrown40@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <SiGmail className="icon" />
+          </a>
+        </div>
       </div>
     </section>
   );

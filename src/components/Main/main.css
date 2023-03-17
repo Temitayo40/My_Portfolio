@@ -41,10 +41,8 @@
   margin: auto;
 }
 .main .secContent .singleProject {
-  display: grid;
   height: 100%;
   border-radius: 0.8rem;
-  align-items: center;
   background: var(--color-default);
   box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
   border: 1px solid #d0d9d4;
@@ -82,11 +80,17 @@
   padding: 0.8rem 1.2rem;
   border-radius: 0.4rem;
 }
+.main .secContent .singleProject .projContent .tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .main .secContent .singleProject .projContent .tools .projTool {
   padding: 0.4rem 0.6rem;
   background-color: var(--text-background);
   border-radius: 0.4px;
   border: none;
+  margin-bottom: 1rem;
 }
 .main .secContent .singleProject .projContent .tools .projTool:not(:last-child) {
   margin-right: 1rem;

@@ -7,10 +7,24 @@ const Data = [
   {
     id: 1,
     imgSrc: img,
-    title: "You are doing well",
+    title: "Crown-Clothing",
     tools: ["Ruby", "JavaScript", "React.js"],
-    text: "Lorem ipsum dolor sit amet, consectetu adipisicing elit. Aperiam labore error temporibus nihil expedita assumenda in rerum quisquam similique, necessitatibus magni modi unde. Tempora natus voluptates deleniti maxim. Dolorum, corrupti?",
+    text: "This is a clothing webApp where users can sign in and check through the categories of cloth present, cart and checkout and pay via online transaction",
   },
+  // {
+  //   id: 2,
+  //   imgSrc: img,
+  //   title: "Natours-Project",
+  //   tools: ["html5", "SCSS"],
+  //   text: "Natours Project is a responsive webpage built with the purpose of showcasing advance css features",
+  // },
+  // {
+  //   id: 3,
+  //   imgSrc: img,
+  //   title: "Crown-Clothing",
+  //   tools: ["html", "CSS", "JavaScript"],
+  //   text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
+  // },
 ];
 
 const Poppup = () => {

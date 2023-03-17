@@ -44,11 +44,8 @@
     margin: auto;
 
     .singleProject {
-      display: grid;
       height: 100%;
-      // row-gap: 1rem;
       border-radius: 0.8rem;
-      align-items: center;
       background: var(--color-default);
       box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
       border: 1px solid #d0d9d4;
@@ -91,11 +88,15 @@
         }
 
         .tools {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           .projTool {
             padding: 0.4rem 0.6rem;
             background-color: var(--text-background);
             border-radius: 0.4px;
             border: none;
+            margin-bottom: 1rem;
 
             &:not(:last-child) {
               margin-right: 1rem;

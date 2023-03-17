@@ -113,6 +113,18 @@
         }
       }
     }
+
+    .homeIcons {
+      column-gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+      border-top: 1ps solid grey;
+
+      .icons {
+        color: var(--color-icons);
+      }
+    }
   }
 }
 
