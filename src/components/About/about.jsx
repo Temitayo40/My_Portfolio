@@ -5,6 +5,7 @@ import img2 from "../../img/ilus-right.png";
 import logo1 from "../../img/languages.png";
 import logo2 from "../../img/framework.png";
 import logo3 from "../../img/skills.png";
+import cv from "../../img/cv.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -16,13 +17,13 @@ const cards = [
     tools: ["JavaScript", "html", "css"],
   },
   {
-    id: 1,
+    id: 2,
     logoSrc: logo2,
     title: "Framework",
     tools: ["Sass", "React.js", "TypeScrip", "BootStrap"],
   },
   {
-    id: 1,
+    id: 3,
     logoSrc: logo3,
     title: "Skills",
     tools: ["CodeKit", "Github", "CodePen", "Gitlab", "Terminal"],
@@ -49,14 +50,15 @@ const About = () => {
             project you need coded, don’t hestiate to contact me.
           </p>
 
-          <button
+          <a
             data-aos="fade-up"
             // data-aos-duration="500"
             className="btn"
-            href="/#"
+            href={cv}
+            download
           >
             Get my Resume
-          </button>
+          </a>
         </div>
       </div>
 

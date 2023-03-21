@@ -1,27 +1,29 @@
 import React from "react";
 import "./poppup.css";
-import img from "../../img/ominifood.jpg";
+// import Ominifood2 from "../../img/ominifood2.png";
+// import natours2 from "../../img/natours2.png";
+import ecommerce2 from "../../img/ecommerce2.png";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Data = [
   {
     id: 1,
-    imgSrc: img,
+    imgSrc: ecommerce2,
     title: "Crown-Clothing",
     tools: ["Ruby", "JavaScript", "React.js"],
     text: "This is a clothing webApp where users can sign in and check through the categories of cloth present, cart and checkout and pay via online transaction",
   },
   // {
   //   id: 2,
-  //   imgSrc: img,
+  //   imgSrc: natours2,
   //   title: "Natours-Project",
   //   tools: ["html5", "SCSS"],
   //   text: "Natours Project is a responsive webpage built with the purpose of showcasing advance css features",
   // },
   // {
   //   id: 3,
-  //   imgSrc: img,
-  //   title: "Crown-Clothing",
+  //   imgSrc: Ominifood2,
+  //   title: "Ominifood",
   //   tools: ["html", "CSS", "JavaScript"],
   //   text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
   // },

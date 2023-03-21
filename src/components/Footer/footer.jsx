@@ -58,6 +58,8 @@ const Footer = () => {
             ref={form}
             onSubmit={sendEmail}
             className="form"
+            name="contactme"
+            netlify="true"
           >
             <div className="inputText">
               <div className="fullscreen full">

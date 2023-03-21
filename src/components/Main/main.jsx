@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
 import "./main.css";
+
+import ominifood1 from "../../img/ominifood1.png";
+import natours1 from "../../img/natours1.png";
+import ecommerce1 from "../../img/ecommerce1.png";
+
 import img1 from "../../img/img1.jpg";
 import img2 from "../../img/img2.jpg";
 import img3 from "../../img/img3.jpg";
@@ -10,6 +15,7 @@ const Data = [
   {
     id: 1,
     imgSrc: img1,
+    imgMin: ecommerce1,
     title: "Crown-Clothing",
     tools: [
       "html",
@@ -24,12 +30,14 @@ const Data = [
   {
     id: 2,
     imgSrc: img3,
+    imgMin: natours1,
     title: "Natours-Project",
     tools: ["html5", "SCSS", "Terminal", "NPM", "Netlify"],
   },
   {
     id: 3,
     imgSrc: img2,
+    imgMin: ominifood1,
     title: "Ominifood",
     tools: ["html", "CSS", "JavaScript", "Terminal", "NPM", "Netlify"],
   },
@@ -49,11 +57,15 @@ const Main = () => {
       </div>
 
       <div className="secContent grid">
-        {Data.map(({ id, imgSrc, title, tools }) => {
+        {Data.map(({ id, imgSrc, title, tools, imgMin }) => {
           return (
             <div data-aos="fade-up" key={id} className="singleProject">
               <div className="imageDiv">
-                <img src={imgSrc} alt={title} />
+                <picture>
+                  <source srcSet={imgSrc} type="image/jpg" />
+                  {/* <source srcSet={imgMin} type="image/jpg" /> */}
+                  <img src={imgSrc} alt={title} />
+                </picture>
               </div>
 
               <div className="projContent">

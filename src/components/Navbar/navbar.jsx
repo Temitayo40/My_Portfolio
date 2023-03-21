@@ -15,6 +15,17 @@ const Navbar = () => {
   const navclose = () => {
     setActive("navbar");
   };
+
+  const nav = document.querySelector(".navbar");
+
+  const allLinks = document.querySelectorAll("a:link");
+  // allLinks.forEach((link) => {
+  //   link.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     ////close mobile navigation
+  //     if (link.classList.contains("navbar")) nav.classList.toggle("isNavOpen");
+  //   });
+  // });
   return (
     <section className="navBarSection">
       <header className="header flex">
@@ -29,7 +40,7 @@ const Navbar = () => {
 
         <div className={active}>
           <ul className="navLists flex">
-            <li className="navItem">
+            <li className="navItem" onClick={navclose}>
               <a href="/#About" className="navLink">
                 About
               </a>
