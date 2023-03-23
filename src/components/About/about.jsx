@@ -5,7 +5,7 @@ import img2 from "../../img/ilus-right.png";
 import logo1 from "../../img/languages.png";
 import logo2 from "../../img/framework.png";
 import logo3 from "../../img/skills.png";
-import cv from "../../img/cv.pdf";
+// import cv from "../../img/cv.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -54,7 +54,9 @@ const About = () => {
             data-aos="fade-up"
             // data-aos-duration="500"
             className="btn"
-            href={cv}
+            href="https://drive.google.com/file/d/1e2aLKvPagAtu2RwASdQJlvmlo2P1oODp/view?usp=share_link"
+            rel="noreferrer"
+            target="_blank"
             download
           >
             Get my Resume

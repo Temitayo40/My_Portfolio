@@ -12,7 +12,7 @@
 }
 
 .About {
-  width: 100%;
+  max-width: 130rem;
 }
 .About .topSection {
   width: 100%;
@@ -43,7 +43,7 @@
   left: -3rem;
 }
 .About .topSection .aboutme {
-  width: 100%;
+  width: 95%;
   display: grid;
   gap: 1rem;
 }
@@ -77,7 +77,8 @@
 }
 .About .cardSection {
   justify-content: center;
-  margin-top: 3rem;
+  margin: 4rem auto;
+  max-width: 130rem;
 }
 .About .cardSection .singleCard {
   display: grid;
@@ -160,12 +161,18 @@
     width: 95%;
     margin: auto;
   }
+  .About .cardSection {
+    width: 97%;
+  }
   .About .cardSection .singleCard {
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1050px) {
+  .About {
+    width: 93%;
+  }
   .About .cardSection .singleCard {
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -173,6 +180,12 @@
   }
 }
 @media screen and (min-width: 1300px) {
+  .About {
+    width: 100%;
+  }
+  .About .topSection {
+    max-width: 100rem;
+  }
   .About .topSection .right {
     height: 160px;
     width: 180px;
@@ -180,5 +193,8 @@
   .About .topSection .left {
     height: 175px;
     width: 203px;
+  }
+  .About .cardSection {
+    width: 85%;
   }
 }/*# sourceMappingURL=about.css.map */

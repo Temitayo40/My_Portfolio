@@ -12,7 +12,7 @@
 }
 
 .About {
-  width: 100%;
+  max-width: 130rem;
   .topSection {
     width: 100%;
     text-align: center;
@@ -45,7 +45,7 @@
     }
 
     .aboutme {
-      width: 100%;
+      width: 95%;
       display: grid;
       gap: 1rem;
 
@@ -86,7 +86,8 @@
 
   .cardSection {
     justify-content: center;
-    margin-top: 3rem;
+    margin: 4rem auto;
+    max-width: 130rem;
 
     .singleCard {
       display: grid;
@@ -185,6 +186,7 @@
 @media screen and (min-width: 600px) {
   .About {
     width: 100%;
+    // padding: 0rem 0 3.2rem 0;
 
     .topSection {
       .aboutme {
@@ -193,6 +195,7 @@
       }
     }
     .cardSection {
+      width: 97%;
       .singleCard {
         margin: auto;
         grid-template-columns: repeat(2, 1fr);
@@ -203,6 +206,7 @@
 
 @media screen and (min-width: 1050px) {
   .About {
+    width: 93%;
     .cardSection {
       .singleCard {
         margin: auto;
@@ -215,7 +219,9 @@
 
 @media screen and (min-width: 1300px) {
   .About {
+    width: 100%;
     .topSection {
+      max-width: 100rem;
       .right {
         height: 160px;
         width: 180px;
@@ -225,6 +231,9 @@
         height: 175px;
         width: 203px;
       }
+    }
+    .cardSection {
+      width: 85%;
     }
   }
 }
