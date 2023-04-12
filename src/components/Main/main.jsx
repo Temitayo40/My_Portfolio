@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./main.css";
 
 import ominifood1 from "../../img/ominifood1.png";
@@ -11,28 +11,25 @@ import img3 from "../../img/img3.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Data = [
+import Poppup from "../poppup/poppup";
+
+const Datas = [
   {
     id: 1,
     imgSrc: img1,
     imgMin: ecommerce1,
     title: "Crown-Clothing",
-    tools: [
-      "html",
-      "css",
-      "JavaScript",
-      "Creat-React-App",
-      "Terminal",
-      "NPM",
-      "Netlify",
-    ],
+    tools: ["html", "css", "JavaScript", "Creat-React-App", "Terminal"],
+    text: "This is a clothing webApp where users can sign in and check through the categories of cloth present, cart and checkout and pay via online transaction",
   },
+
   {
     id: 2,
     imgSrc: img3,
     imgMin: natours1,
     title: "Natours-Project",
     tools: ["html5", "SCSS", "Terminal", "NPM", "Netlify"],
+    text: "Natours Project is a responsive webpage built with the purpose of showcasing advance css features",
   },
   {
     id: 3,
@@ -40,6 +37,7 @@ const Data = [
     imgMin: ominifood1,
     title: "Ominifood",
     tools: ["html", "CSS", "JavaScript", "Terminal", "NPM", "Netlify"],
+    text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
   },
 ];
 
@@ -50,37 +48,35 @@ const Main = () => {
 
   return (
     <section id="Portfolio" className="main container section">
-      <div className="secTitle">
-        <h2 data-aos="fade-right" className="title">
-          My Recent Works
-        </h2>
+      <div data-aos="fade-right" className="secTitle">
+        <h2 className="title">About Me</h2>
+        <div className="underline"></div>
       </div>
 
       <div className="secContent grid">
-        {Data.map(({ id, imgSrc, title, tools, imgMin }) => {
+        {Datas.map((data) => {
           return (
-            <div data-aos="fade-up" key={id} className="singleProject">
+            <div data-aos="fade-up" key={data.id} className="singleProject">
               <div className="imageDiv">
                 <picture>
-                  <source srcSet={imgSrc} type="image/jpg" />
+                  <source srcSet={data.imgSrc} type="image/jpg" />
                   {/* <source srcSet={imgMin} type="image/jpg" /> */}
-                  <img src={imgSrc} alt={title} />
+                  <img src={data.imgSrc} alt={data.title} />
                 </picture>
               </div>
 
               <div className="projContent">
                 <div className="projTitle">
-                  <h3>{title}</h3>
+                  <h3>{data.title}</h3>
                 </div>
                 <span className="tools">
-                  {tools.map((tool, id) => {
+                  {data.tools.map((tool, id) => {
                     return (
                       <span className="projTool" key={id}>
                         {tool}
                       </span>
                     );
                   })}
-                  {/* <button className="btn">See Project</button> */}
                 </span>
                 <button className="btn">See Project</button>
               </div>
@@ -88,6 +84,9 @@ const Main = () => {
           );
         })}
       </div>
+      {/* {poppupToggle && (
+        <Poppup poppupContent={poppupContent} changeData={changeData} />
+      )} */}
     </section>
   );
 };

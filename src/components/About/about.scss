@@ -61,19 +61,6 @@
           text-align: center;
           text-transform: capitalize;
           z-index: 2;
-
-          &:after {
-            position: absolute;
-            content: "";
-            left: 50%;
-            bottom: -0.5rem;
-            transform: translate(-50%);
-
-            width: 10rem;
-            height: 0.5rem;
-            background: var(--color-primary);
-            z-index: -1;
-          }
         }
       }
 
@@ -86,7 +73,7 @@
 
   .cardSection {
     justify-content: center;
-    margin: 4rem auto;
+    margin: 4rem auto 0rem;
     max-width: 130rem;
 
     .singleCard {
@@ -233,7 +220,7 @@
       }
     }
     .cardSection {
-      width: 85%;
+      width: 95%;
     }
   }
 }

@@ -114,6 +114,29 @@ html {
   scroll-behavior: smooth;
 }
 
+.secTitle .title {
+  margin: auto;
+  color: var(--color-secondary);
+  font-size: 3.5rem;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin: 0 auto 3rem auto;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.underline {
+  width: 8rem;
+  height: 0.5rem;
+  background: var(--color-primary);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+}
+
 /* MEDIA QUERIES ************** */
 @media screen and (min-width: 600px) {
   html {

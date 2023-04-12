@@ -60,24 +60,13 @@
   text-transform: capitalize;
   z-index: 2;
 }
-.About .topSection .aboutme .secTitle .title:after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: -0.5rem;
-  transform: translate(-50%);
-  width: 10rem;
-  height: 0.5rem;
-  background: var(--color-primary);
-  z-index: -1;
-}
 .About .topSection .aboutme .paragraph {
   width: 100%;
   z-index: 100;
 }
 .About .cardSection {
   justify-content: center;
-  margin: 4rem auto;
+  margin: 4rem auto 0rem;
   max-width: 130rem;
 }
 .About .cardSection .singleCard {
@@ -195,6 +184,6 @@
     width: 203px;
   }
   .About .cardSection {
-    width: 85%;
+    width: 95%;
   }
 }/*# sourceMappingURL=about.css.map */

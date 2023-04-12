@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-bottom: 3rem;
 }
 .home .overlay {
   position: absolute;
@@ -78,6 +79,7 @@
   .home {
     height: 90vh;
     width: 95%;
+    margin-bottom: 5rem;
   }
 }
 @media screen and (min-width: 600px) {
@@ -90,12 +92,7 @@
 }
 @media screen and (min-width: 769px) {
   .home .homeContent {
-    padding: 12rem 1.5rem 12rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .home .homeContent .textDiv .textTitle {
-    font-size: 5rem;
+    padding: 12rem 1.5rem 3rem 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {

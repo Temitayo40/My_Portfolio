@@ -39,10 +39,9 @@ const About = () => {
         <img className="left" src={img1} alt="left ilustration" />
         <img className="right" src={img2} alt=" right" />
         <div className="aboutme">
-          <div className="secTitle">
-            <h2 data-aos="fade-right" className="title">
-              About Me
-            </h2>
+          <div data-aos="fade-right" className="secTitle">
+            <h2 className="title">About Me</h2>
+            <div className="underline"></div>
           </div>
           <p data-aos="fade-up" className="paragraph">
             I can help you build a product , feature or website Look through

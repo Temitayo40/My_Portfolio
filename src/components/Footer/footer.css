@@ -56,8 +56,9 @@
 .footer .footerSection .footerContent .footerTitle {
   margin: auto;
   color: var(--color-secondary);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 1.4;
 }
 .footer .footerSection .footerContent .form {
   display: grid;
@@ -160,6 +161,9 @@
   }
   .footer .footerSection .img-3 {
     width: 13rem;
+  }
+  .footer .footerSection .footerContent {
+    grid-template-columns: 45fr 55fr;
   }
 }
 @media screen and (min-width: 1050px) {

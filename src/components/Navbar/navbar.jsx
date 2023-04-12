@@ -16,25 +16,18 @@ const Navbar = () => {
     setActive("navbar");
   };
 
-  const nav = document.querySelector(".navbar");
+  // const nav = document.querySelector(".navbar");
 
-  const allLinks = document.querySelectorAll("a:link");
-  // allLinks.forEach((link) => {
-  //   link.addEventListener("click", (e) => {
-  //     e.preventDefault();
-  //     ////close mobile navigation
-  //     if (link.classList.contains("navbar")) nav.classList.toggle("isNavOpen");
-  //   });
-  // });
+  // const allLinks = document.querySelectorAll("a:link");
   return (
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
           <a href="/#" className="logo">
-            <h1>
+            <h2>
               <GiHolyGrail className="icon" />
               Free-Realm
-            </h1>
+            </h2>
           </a>
         </div>
 
