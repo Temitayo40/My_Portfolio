@@ -42,6 +42,12 @@ const Datas = [
 ];
 
 const Main = () => {
+  const [value, setValue] = useState(0);
+  const [poppup, setPoppup] = useState(false);
+  const togglePoppup = () => {
+    setPoppup(!poppup);
+  };
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -49,12 +55,12 @@ const Main = () => {
   return (
     <section id="Portfolio" className="main container section">
       <div data-aos="fade-right" className="secTitle">
-        <h2 className="title">About Me</h2>
+        <h2 className="title">Projects</h2>
         <div className="underline"></div>
       </div>
 
       <div className="secContent grid">
-        {Datas.map((data) => {
+        {Datas.map((data, index) => {
           return (
             <div data-aos="fade-up" key={data.id} className="singleProject">
               <div className="imageDiv">
@@ -78,15 +84,21 @@ const Main = () => {
                     );
                   })}
                 </span>
-                <button className="btn">See Project</button>
+                <button
+                  className="btn"
+                  onClick={() => {
+                    togglePoppup();
+                    setValue(index);
+                  }}
+                >
+                  See Project
+                </button>
               </div>
             </div>
           );
         })}
       </div>
-      {/* {poppupToggle && (
-        <Poppup poppupContent={poppupContent} changeData={changeData} />
-      )} */}
+      {poppup && <Poppup value={value} togglePoppup={togglePoppup} />}
     </section>
   );
 };

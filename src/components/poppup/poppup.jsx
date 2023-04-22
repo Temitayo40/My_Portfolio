@@ -4,6 +4,7 @@ import "./poppup.css";
 // import natours2 from "../../img/natours2.png";
 import ecommerce2 from "../../img/ecommerce2.png";
 import { AiOutlineClose } from "react-icons/ai";
+import { GrFormClose } from "react-icons/gr";
 
 const Datas = [
   {
@@ -15,35 +16,37 @@ const Datas = [
   },
   {
     id: 2,
-    imgSrc: ecommerce2,
+    imgSrc: require("../../img/natours2.png"),
     title: "Natours-Project",
     tools: ["html5", "SCSS"],
     text: "Natours Project is a responsive webpage built with the purpose of showcasing advance css features",
   },
-  // {
-  //   id: 3,
-  //   imgSrc: Ominifood2,
-  //   title: "Ominifood",
-  //   tools: ["html", "CSS", "JavaScript"],
-  //   text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
-  // },
+  {
+    id: 3,
+    imgSrc: require("../../img/ominifood2.png"),
+    title: "Ominifood",
+    tools: ["html", "CSS", "JavaScript"],
+    text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
+  },
 ];
 
-const Poppup = () => {
-  // const [index, setIndex] = useState(0);
-  const { id, imgSrc, tools, title, text } = Datas;
+const Poppup = ({ value, togglePoppup }) => {
+  const { id, imgSrc, tools, title, text } = Datas[value];
 
   return (
-    <section className="poppup">
+    <section className="poppup" onClick={togglePoppup}>
       <div className="poppup__container" onClick={(e) => e.stopPropagation()}>
         <div className="poppup__textContent">
+          {/* <button onClick={togglePoppup}>close</button> */}
+          <GrFormClose className="pop-icon" onClick={togglePoppup} />
+          {/* <IoClose className="pop-icon " /> */}
           <div key={id} className="contents">
             <div className="imgDiv">
               <img src={imgSrc} alt={title} />
               <AiOutlineClose className="icon" />
             </div>
             <div className="texts">
-              <h3 className="title">{title}</h3>
+              <h3 className="title-poppup">{title}</h3>
               <div className="tools">
                 {tools.map((tool, id) => {
                   return (

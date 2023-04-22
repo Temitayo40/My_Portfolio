@@ -6,19 +6,26 @@ import { TbGridDots } from "react-icons/tb";
 // import About from "../About/about";
 const Navbar = () => {
   const [active, setActive] = useState("navbar");
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   //function or the toggle and close icon
 
   const navOpen = () => {
     setActive("navbar isNavOpen");
+    setModal(true);
   };
   const navclose = () => {
-    setActive("navbar");
+    setModal(!modal);
   };
 
   // const nav = document.querySelector(".navbar");
 
   // const allLinks = document.querySelectorAll("a:link");
+
   return (
     <section className="navBarSection">
       <header className="header flex">
@@ -30,31 +37,33 @@ const Navbar = () => {
             </h2>
           </a>
         </div>
+        {modal && (
+          <div className="overlay" onClick={() => setModal(!modal)}>
+            <div className={active}>
+              <ul className="navLists flex">
+                <li className="navItem">
+                  <a href="/#About" className="navLink" onClick={navclose}>
+                    About
+                  </a>
+                </li>
+                <li className="navItem" onClick={navclose}>
+                  <a href="/#Portfolio" className="navLink">
+                    Portfolio
+                  </a>
+                </li>
+                <li className="navItem" onClick={navclose}>
+                  <a href="/#Contact" className="navLink">
+                    Contact
+                  </a>
+                </li>
+              </ul>
 
-        <div className={active}>
-          <ul className="navLists flex">
-            <li className="navItem" onClick={navclose}>
-              <a href="/#About" className="navLink">
-                About
-              </a>
-            </li>
-            <li className="navItem">
-              <a href="/#Portfolio" className="navLink">
-                Portfolio
-              </a>
-            </li>
-            <li className="navItem">
-              <a href="/#Contact" className="navLink">
-                Contact
-              </a>
-            </li>
-          </ul>
-
-          <div onClick={navclose} className="closeNavBar">
-            <AiFillCloseCircle className="icon" />
+              <div onClick={navclose} className="closeNavBar">
+                <AiFillCloseCircle className="icon" />
+              </div>
+            </div>
           </div>
-        </div>
-
+        )}
         <div onClick={navOpen} className="toggleNavBar">
           <TbGridDots className="icon" />
         </div>

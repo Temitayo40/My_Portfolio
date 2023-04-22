@@ -37,7 +37,16 @@
   transform: translateY(10px);
 }
 @media screen and (max-width: 768px) {
-  .header .navbar {
+  .header .overlay {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(49, 49, 49, 0.884);
+    overflow: hidden;
+  }
+  .header .overlay .navbar {
     position: absolute;
     width: 80%;
     padding: 1rem;
@@ -51,35 +60,36 @@
     box-shadow: rgba(2, 15, 29, 0.23);
     z-index: 2000;
     transition: 0.5s ease-in-out;
+    overflow: hidden;
   }
-  .header .navbar .navLists {
+  .header .overlay .navbar .navLists {
     flex-direction: column;
     width: 100%;
     margin: 2rem auto;
     padding: 1rem 0;
     justify-content: center;
   }
-  .header .navbar .navLists .navItem {
+  .header .overlay .navbar .navLists .navItem {
     padding: 0.5rem 0;
   }
-  .header .navbar .navLists .navItem .navLink {
+  .header .overlay .navbar .navLists .navItem .navLink {
     color: var(--color-text);
     font-size: 3.2rem;
     font-weight: 600;
   }
-  .header .navbar .navLists .navItem .navLink:hover {
+  .header .overlay .navbar .navLists .navItem .navLink:hover {
     color: #27312c;
   }
-  .header .navbar .closeNavBar {
+  .header .overlay .navbar .closeNavBar {
     position: absolute;
     top: 1rem;
     right: 1.1rem;
     color: var(--color-primary);
   }
-  .header .navbar .closeNavBar:hover {
+  .header .overlay .navbar .closeNavBar:hover {
     color: var(--color-secondary);
   }
-  .header .isNavOpen {
+  .header .overlay .isNavOpen {
     top: 9rem;
   }
 }

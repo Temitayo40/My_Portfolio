@@ -43,57 +43,67 @@
   }
 
   @media screen and (max-width: 768px) {
-    .navbar {
-      position: absolute;
-      width: 80%;
-      //   margin: auto;
-      padding: 1rem;
-      background: var(--color-default);
-      border-radius: 1rem;
-      top: -200rem;
-      left: 50%;
-      transform: translate(-50%);
-      height: max-content;
-      box-shadow: rgba(2, 15, 29, 0.23);
-      z-index: 2000;
-      transition: 0.5s ease-in-out;
+    .overlay {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      background: rgba(49, 49, 49, 0.884);
+      overflow: hidden;
 
-      .navLists {
-        flex-direction: column;
-        width: 100%;
-        margin: 2rem auto;
-        padding: 1rem 0;
-        justify-content: center;
+      .navbar {
+        position: absolute;
+        width: 80%;
+        padding: 1rem;
+        background: var(--color-default);
+        border-radius: 1rem;
+        top: -200rem;
+        left: 50%;
+        transform: translate(-50%);
+        height: max-content;
+        box-shadow: rgba(2, 15, 29, 0.23);
+        z-index: 2000;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
 
-        .navItem {
-          padding: 0.5rem 0;
+        .navLists {
+          flex-direction: column;
+          width: 100%;
+          margin: 2rem auto;
+          padding: 1rem 0;
+          justify-content: center;
 
-          .navLink {
-            color: var(--color-text);
-            font-size: 3.2rem;
-            font-weight: 600;
+          .navItem {
+            padding: 0.5rem 0;
 
-            &:hover {
-              color: #27312c;
+            .navLink {
+              color: var(--color-text);
+              font-size: 3.2rem;
+              font-weight: 600;
+
+              &:hover {
+                color: #27312c;
+              }
             }
+          }
+        }
+
+        .closeNavBar {
+          position: absolute;
+          top: 1rem;
+          right: 1.1rem;
+          color: var(--color-primary);
+
+          &:hover {
+            color: var(--color-secondary);
           }
         }
       }
 
-      .closeNavBar {
-        position: absolute;
-        top: 1rem;
-        right: 1.1rem;
-        color: var(--color-primary);
-
-        &:hover {
-          color: var(--color-secondary);
-        }
+      .isNavOpen {
+        top: 9rem;
       }
-    }
-
-    .isNavOpen {
-      top: 9rem;
     }
   }
 

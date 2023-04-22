@@ -53,14 +53,16 @@ function Experience() {
           <h3>{title}</h3>
           <h4>{company}</h4>
           <p className="job-date">{dates}</p>
-          {duties.map((duty, index) => {
-            return (
-              <div key={index} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{duty}</p>
-              </div>
-            );
-          })}
+          <p className="job">
+            {duties.map((duty, index) => {
+              return (
+                <div key={index} className="job-desc">
+                  <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
+                  <p style={{ color: "#42526e" }}>{duty}</p>
+                </div>
+              );
+            })}
+          </p>
         </article>
       </div>
     </section>
