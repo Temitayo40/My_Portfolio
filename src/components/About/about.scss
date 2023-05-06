@@ -12,7 +12,7 @@
 }
 
 .About {
-  max-width: 130rem;
+  // max-width: 130rem;
   .topSection {
     width: 100%;
     text-align: center;
@@ -48,6 +48,7 @@
       width: 95%;
       display: grid;
       gap: 1rem;
+      margin: 0 auto;
 
       .secTitle {
         .title {
@@ -75,6 +76,7 @@
     justify-content: center;
     margin: 4rem auto 0rem;
     max-width: 130rem;
+    width: 93%;
 
     .singleCard {
       display: grid;
@@ -91,6 +93,8 @@
         align-items: center;
         justify-content: center;
         box-shadow: 0 2px 4px rgba(29, 31, 29, 0.5);
+        margin: 0 auto;
+        width: 90%;
 
         .imgDiv {
           padding: 1.5rem;
@@ -177,12 +181,12 @@
 
     .topSection {
       .aboutme {
-        width: 95%;
+        width: 90%;
         margin: auto;
       }
     }
     .cardSection {
-      width: 97%;
+      width: 93%;
       .singleCard {
         margin: auto;
         grid-template-columns: repeat(2, 1fr);
@@ -220,7 +224,7 @@
       }
     }
     .cardSection {
-      width: 95%;
+      width: 84%;
     }
   }
 }

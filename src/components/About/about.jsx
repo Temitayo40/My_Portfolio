@@ -34,7 +34,7 @@ const About = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section id="About" className="About container section ">
+    <section id="About" className="About ">
       <div className="topSection">
         <img className="left" src={img1} alt="left ilustration" />
         <img className="right" src={img2} alt=" right" />

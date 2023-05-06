@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./poppup.css";
 // import Ominifood2 from "../../img/ominifood2.png";
 // import natours2 from "../../img/natours2.png";
@@ -13,6 +13,8 @@ const Datas = [
     title: "Crown-Clothing",
     tools: ["Ruby", "JavaScript", "React.js"],
     text: "This is a clothing webApp where users can sign in and check through the categories of cloth present, cart and checkout and pay via online transaction",
+    live: "https://crown-clothing-free-realm.netlify.app/",
+    github: "https://github.com/Temitayo40/crown-clothing",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ const Datas = [
     title: "Natours-Project",
     tools: ["html5", "SCSS"],
     text: "Natours Project is a responsive webpage built with the purpose of showcasing advance css features",
+    live: "https://natours-project-free-realm.netlify.app/",
+    github: "https://github.com/Temitayo40/Natours_Project",
   },
   {
     id: 3,
@@ -27,11 +31,14 @@ const Datas = [
     title: "Ominifood",
     tools: ["html", "CSS", "JavaScript"],
     text: "It's a technology company first, but with a major focus on consumer well-being through a healthy diet. A healthy meal deliver to you every single day",
+
+    live: "https://ominifood-free-realm.netlify.app/",
+    github: "https://github.com/Temitayo40/OminiFood-",
   },
 ];
 
 const Poppup = ({ value, togglePoppup }) => {
-  const { id, imgSrc, tools, title, text } = Datas[value];
+  const { id, imgSrc, tools, title, text, live, github } = Datas[value];
 
   return (
     <section className="poppup" onClick={togglePoppup}>
@@ -59,8 +66,17 @@ const Poppup = ({ value, togglePoppup }) => {
 
               <p className="text">{text}</p>
               <div className="button">
-                <button className="btn">See Project</button>
-                <button className="btn">See Project</button>
+                <a className="btn" href={live} rel="noreferrer" target="_blank">
+                  Live Project
+                </a>
+                <a
+                  className="btn"
+                  href={github}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Github Repo
+                </a>
               </div>
             </div>
           </div>

@@ -225,9 +225,9 @@ Jobs
     grid-template-columns: 200px 1fr;
     column-gap: 4rem;
   }
-  .job-info h3 {
+  /* .job-info h3 {
     text-align: center;
-  }
+  } */
   .btn-container {
     flex-direction: column;
     justify-content: flex-start;

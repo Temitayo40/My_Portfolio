@@ -147,11 +147,11 @@
     width: 100%;
   }
   .About .topSection .aboutme {
-    width: 95%;
+    width: 90%;
     margin: auto;
   }
   .About .cardSection {
-    width: 97%;
+    width: 93%;
   }
   .About .cardSection .singleCard {
     margin: auto;
@@ -184,6 +184,6 @@
     width: 203px;
   }
   .About .cardSection {
-    width: 95%;
+    width: 84%;
   }
 }/*# sourceMappingURL=about.css.map */
